@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Open Sans'
+  }
+
+  nav {
+    @apply w-full h-[100px] flex flex-row justify-center items-center text-primary bg-white border-b border-b-tertiary
+  }
+
+  section {
+    @apply w-full min-h-[600px] flex flex-col justify-center items-center mb-24
+  }
+
+  .div-container {
+    @apply h-full w-full flex flex-col justify-center items-center
+  }
+
+  .col-container {
+    @apply h-full w-full flex flex-col justify-center items-center max-w-[85%] md:max-w-[75%] text-center md:text-left
+  }
+
+  .row-container {
+    @apply h-full w-full flex flex-row justify-center items-center max-w-[85%] md:max-w-[75%]
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-primary my-4 mx-8
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-black my-4 mx-8
+  }
+
+  h3 {
+    @apply text-xl font-medium my-4 mx-8 italic
+  }
+
+  p {
+    @apply text-lg my-2 mx-4 text-center
+  }
+
+  li {
+    @apply text-xl font-medium
+  }
+
+  footer {
+    @apply w-full h-[100px] flex flex-row justify-center items-center text-primary bg-white border-t border-t-tertiary
+  }
+
+  button {
+    @apply cursor-pointer hover:cursor-pointer;
+  }
+
+  .button-style {
+    @apply text-white bg-gradient-to-br from-secondary via-primary to-tertiary hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-primary rounded-lg px-5 py-2.5 text-center text-xl border border-primary m-4
+  }
+
+  .cta-button {
+    @apply text-white bg-transparent border border-white hover:bg-gradient-to-bl hover:from-secondary hover:via-primary hover:to-tertiary focus:ring-4 focus:outline-none focus:ring-primary rounded-lg px-5 py-2.5 text-center text-xl m-4
+  }
+
+  .sub-button {
+    @apply text-white bg-gradient-to-br from-secondary via-primary to-tertiary hover:from-white hover:via-white hover:to-white hover:text-primary hover:font-semibold rounded-lg px-5 py-2.5 text-center text-xl border border-secondary m-4
+  }
+
+  .react-icon {
+    @apply w-24 h-24 self-center;
+  }
+
+  .sub-icon {
+    @apply w-10 h-10 self-center text-primary
+    
+  }
+
+  .icon-blue {
+    @apply text-primary
+  }
+
+  .card {
+    @apply bg-white text-primary md:w-[300px] min-w-[200px] rounded-3xl shadow-lg border border-tertiary m-2 p-2 flex flex-col justify-center items-center text-center transition-all ease-in duration-100 hover:bg-gradient-to-br hover:from-secondary hover:via-tertiary hover:to-primary hover:text-white md:mx-6
+  }
+
+  .cta-bg {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(20,181,113,0.5) 20%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(20,181,113,0.5) 80%, rgba(255,255,255,1) 100%); 
+    overflow: visible;
+    background-repeat: no-repeat;
+    background-position: center
+  }
+
+  form {
+    @apply w-fit h-fit p-12 border-tertiary border rounded-lg shadow-lg flex flex-col justify-center items-center text-left
+  }
+  
+  label {
+    @apply text-lg font-light
+  }
+
+  input {
+    @apply border-b border-secondary block w-full p-2.5 focus:outline-none focus:border-tertiary
+  }
+
+
+
+}

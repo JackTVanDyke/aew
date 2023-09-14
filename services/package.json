@@ -1,0 +1,13 @@
+{
+  "name": "@aew/services",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "aws-sdk": "^2.1288.0",
+    "stripe": "^11.5.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109"
+  }
+}
